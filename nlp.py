@@ -11,9 +11,19 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 class MyDataset(Dataset):
     def __init__(self, tokenizer, filename, block_size=512):
+        data_pairs = []
         with open(filename, 'r', encoding='utf-8') as f:
-            lines = json.load(f)
-        self.examples = [tokenizer(line, return_tensors="pt", truncation=True, max_length=block_size)["input_ids"].squeeze() for line in lines]
+            data_dict = json.load(f)    
+       
+        for dict_item in data_dict:
+            print(dict_item)
+            for key, value in dict_item.items():
+                if(isinstance(value,dict)):
+                    for key, val in value:
+                        data_pairs.append(f"{key} : {' '.join(val)}")
+                data_pairs.append(f"{key}: {' '.join(value)}")
+        
+        self.examples = [tokenizer(line, return_tensors="pt",padding="max_length", truncation=True, max_length=block_size)["input_ids"].squeeze() for line in data_pairs]
 
     def __len__(self):
         return len(self.examples)
@@ -26,7 +36,7 @@ class MyDataset(Dataset):
 dataset = MyDataset(tokenizer, 'dataset.json')
 data_loader = DataLoader(dataset, batch_size=8)  # Adjust batch size according to your GPU memory
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("mps")
 model.to(device)
 
 optimizer = AdamW(model.parameters(), lr=5e-5)
@@ -42,4 +52,5 @@ for epoch in range(3):  # Number of epochs
         optimizer.step()
         print(f"Epoch: {epoch}, Loss: {loss.item()}")
 
-model.save_pretrained("./")
+model.save_pretrained("./robby")
+tokenizer.save_pretrained("./robby")

@@ -1,29 +1,28 @@
 [
-  {"a": {
-      "preposition": [
+  {"a": [
+     
         "Examples: àja ccîd a tte e a jjiss! (I have to kill you and him!); chjàma a ss'òmm'n a ssa fémm'na! (call this person - male or female!); fa m'nì a ppàt't! (make your father come!)"
-      ],
-      "verb": [
+      
+      ,
         "tu a (you have) - second person singular present indicative of AVERE and ESSERE. Example: tu a fatt céndr (you hit the target); tu t l'a méss ngâp mó'? (have you set your mind to it now?); ch'a fatt? (what have you done?); l'a   sagghjût tu la scàla ngîm a lu titt? Nò, mó' vu v'dé ca l'à nnammuccjât jiss? (did you climb the ladder to the roof? No, now you want to see if he has hidden it?)"
-      ],
-      "prepositional_prefix": [
+      ,
+    
         "Examples: bbadàjh → abbadàjh, t’rà→ att’rà, cócchja→ accucchjàjh"
-      ],
-      "adverbial_phrases": [
+      ,
+      
         "Examples: a l'Assùnda, a Ssànda Marìja, a ccarnuâl, a la féra, a la rr'cóta, a li cinch (o cingh), a lì vùnn'c', a nnóna, a lu uèsp'r, a la matìna, a mmat'tìna, a la mèrca, a la scurdàta"
-      ]
-    }},
+      
+]},
   {
       "a pprîm tèmb": ["Agricoltura orticola - di prima raccolta, che matura a inizio ciclo di produzione. Esempio: i fioroni o fìcura ròss, maturano a Ssànd’l’càndr."]
     },
     {
       "a ss'cónd": [
-        {
-          "loc_avv_le": "Secondo, secondo che. Esempio: a ss'cónda ca ffa o n'n ffa na cósa (secondo che fai o non fai qualcosa)."
-        },
-        {
-          "a ss’cónd tèmb": "Si dice di varietà di frutta o di ortaggi maturabili in un secondo tempo rispetto ad altre varietà."
-        }
+         "Secondo, secondo che. Esempio: a ss'cónda ca ffa o n'n ffa na cósa (secondo che fai o non fai qualcosa).",
+        
+        
+          "a ss’cónd tèmb: Si dice di varietà di frutta o di ortaggi maturabili in un secondo tempo rispetto ad altre varietà."
+        
       ]
     },
     {
@@ -83,10 +82,10 @@
       "ac'tàjh, ac'tà": ["Verbo - 1. Inacidire, andare in aceto. Esempio: ji mm jàc'téjh, jiss c’ac'téja (io mi agito, egli si agita)."]
     },
     {
-      "addôr": {
-        "1": ["Odore, profumo, fragranza."],
-        "2": ["Sentore, concetto di bontà, opinione di buone qualità riguardanti una persona."]
-      }
+      "addôr":[
+      "Odore, profumo, fragranza.",
+      "Sentore, concetto di bontà, opinione di buone qualità riguardanti una persona."
+    ]
     },
     {
       "addummànn": ["Il domandare, il chiedere, la richiesta di informazioni."]
@@ -277,14 +276,14 @@
       "bbattènd": ["Descrizione omessa; tocco, battitoio, martelletto o anello di metallo per bussare (c’ tòzz’la) sui portoni."]
     },
     {
-      "Bbattìsta": {
-        "replacement": "Sostituire con due lemmi: Bbattìst e bbattìsta.",
-        "Bbattìst": "nome m. o f. Battista; diminutivi: m. T’ttîn, f. Bbàtt'stìna, T'ttìna.",
-        "bbattìsta": {
-          "1": "agg. sost.le - batista, tela pregiata (V. téla bbattìsta).",
-          "2": "Bbattìsta - cognome."
-        }
-      }
+      "Bbattìsta": [
+      "Sostituire con due lemmi: Bbattìst e bbattìsta.",
+       "nome m. o f. Battista; diminutivi: m. T’ttîn, f. Bbàtt'stìna, T'ttìna.",
+       
+          "agg. sost.le - batista, tela pregiata (V. téla bbattìsta).",
+        "Bbattìsta - cognome."
+      ]
+      
     },
     {
       "Bbéfàna": [
