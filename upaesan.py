@@ -17,6 +17,6 @@ def generate_text(input_text, max_length=150):
     # Decode and return the output text
     return tokenizer.decode(output[0], skip_special_tokens=True)
 
-input_text = "a menna' "
+input_text = "menna"
 generated_text = generate_text(input_text)
 print(generated_text)
